@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: rgba(29,29,29,0.92);" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <Button fx:id="start" disable="true" layoutX="426.0" layoutY="75.0" mnemonicParsing="false" onAction="#startCorpus" prefHeight="5.0" prefWidth="96.0" text="Start">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font></Button>
+        <Label layoutX="270.0" layoutY="6.0" text="Google Moogle" textFill="#f4fdff" style="-fx-color-label-visible: #caffff">
+            <font>
+                <Font name="Arial Bold" size="35.0" />
+            </font>
+        </Label>
+        <Label layoutX="8.0" layoutY="480.0" text="by Shir Ben-Dor and Liron Ben-Yakov" textFill="#b8b8b8">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="reset" disable="false" layoutX="632.0" layoutY="456.0" mnemonicParsing="false" onAction="#reset" prefHeight="21.0" prefWidth="96.0" text="reset">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font></Button>
+        <CheckBox fx:id="stemmer" layoutX="178.0" layoutY="125.0" mnemonicParsing="false" text="Stemming" textFill="#caffff">
+            <font>
+                <Font size="14.0" />
+            </font></CheckBox>
+        <Button fx:id="showDic" disable="true" layoutX="173.0" layoutY="153.0" mnemonicParsing="false" onAction="#showDic" prefHeight="25.0" prefWidth="208.0" text="show Dictionary" />
+        <Button fx:id="loadDic" disable="true" layoutX="173.0" layoutY="192.0" mnemonicParsing="false" onAction="#LoadDirectory" prefHeight="25.0" prefWidth="208.0" text="load Dictionary" />
+        <TextField fx:id="f1" layoutX="177.0" layoutY="56.0" />
+        <TextField fx:id="f2" layoutX="177.0" layoutY="96.0" />
+        <Button layoutX="328.0" layoutY="56.0" mnemonicParsing="false" onAction="#openPath" text="Browse" />
+        <Button layoutX="328.0" layoutY="96.0" mnemonicParsing="false" onAction="#PathToSavePosting" text="Browse" />
+        <Label layoutX="23.0" layoutY="56.0" text="Choose path to Corpus" textFill="#a8f5ff">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font></Label>
+        <Label layoutX="21.0" layoutY="96.0" text="Choose path to Posting" textFill="#a8f5ff">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font></Label>
+        <Label layoutX="97.0" layoutY="287.0" text="Entry query" textFill="#a8f5ff">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font></Label>
+        <Label layoutX="99.0" layoutY="325.0" text="Load query" textFill="#a8f5ff">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font></Label>
+        <TextField fx:id="f3" layoutX="177.0" layoutY="286.0" />
+        <TextField fx:id="f4" layoutX="177.0" layoutY="324.0" />
+        <Button layoutX="328.0" layoutY="324.0" mnemonicParsing="false" onAction="#LoadFileQuery" text="Browse" />
+        <TextField fx:id="f5" layoutX="177.0" layoutY="387.0" />
+        <Label layoutX="51.0" layoutY="388.0" prefWidth="122.0" text="path to save result" textFill="#a8f5ff">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="328.0" layoutY="387.0" mnemonicParsing="false" onAction="#pathToSaveResult" text="Browse" />
+      <CheckBox fx:id="semanticToQuery" layoutX="179.0" layoutY="353.0" mnemonicParsing="false" text="Semantic" textFill="#caffff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="runQuery" disable="true" layoutX="426.0" layoutY="300.0" mnemonicParsing="false" onAction="#runQuery" prefHeight="5.0" prefWidth="96.0" text="Run">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="borderPane" layoutX="546.0" layoutY="75.0" prefHeight="358.0" prefWidth="173.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="331.0" prefWidth="290.0" />
+      </BorderPane>
+    </children>
+</AnchorPane>
